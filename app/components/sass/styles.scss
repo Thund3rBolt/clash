@@ -26,48 +26,6 @@ html, body {
 
 
 
-
-/* =========================================================
-
-Links
-
-============================================================ */
-
-
-a {
-	text-decoration: none;
-}
-
-
-
-a:hover {
-	color: purple;
-}
-
-.nav a {
-	color: white;
-}
-
-.nav a:hover {
-	color: yellow;
-}
-
-
-.logo-link, .logo-link:hover {
-	color: #000;
-
-}
-
-/* =========================================================
-
-Typography
-
-============================================================ */
-
-
-
-
-
 /* =========================================================
 
 Header
@@ -76,100 +34,33 @@ Header
 
 
 .header {
-	background-image: -webkit-linear-gradient(left, blue 33%, green);
-	background-image: -o-linear-gradient(left, blue 33%, green);
-	background-image: linear-gradient(to right, blue 33%, green);
-	height: 7em;
-	margin-bottom: 2em;
+    background-image:
+      -moz-linear-gradient(45deg, #000 25%, transparent 25%), 
+      -moz-linear-gradient(-45deg, #000 25%, transparent 25%),
+      -moz-linear-gradient(45deg, transparent 75%, #000 75%),
+      -moz-linear-gradient(-45deg, transparent 75%, #000 75%);
+    background-image:
+      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, #000), color-stop(.25, transparent)), 
+      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, #000), color-stop(.25, transparent)),
+      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.75, transparent), color-stop(.75, #000)),
+      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.75, yellow), color-stop(.75, #000));
+
+    -moz-background-size:50px 50px;
+    background-size:50px 50px;
+    -webkit-background-size:100px 101px; /* override value for shitty webkit */
+    
+    background-position:0 0, 50px 0, 50px -50px, 0px 50px;
+	height: 9.2em;
+	width: 100%;
 }
 
 
-.header h3 {
-	text-align: right;
-}
-
-
-.logo-link {
-	font-size: 3em;
-	padding-left: .1em;
-}
-
-.anything-it {
-	font-size: 1.2em;
-	line-height: 1.2em;
-	margin-top: -0.4em;
-	padding-left: 6.5em;
-}
-
-
-
-/* =========================================================
-
-Footer
-
-============================================================ */
-
-
-footer {
-	background-image: -webkit-linear-gradient(right, blue, green 39%, green 60%, blue);
-	background-image: -o-linear-gradient(right, blue, green 39%, green 60%, blue);
-	background-image: linear-gradient(to left, blue, green 39%, green 60%, blue);
-	bottom: 0;
-	font-size: .7em;
-	height: 6.250em;
-	position: absolute;
-	width: 100%
-}
-
-
-footer p {
+.logo {
+	color: #fff;
+	font-size: 4em;
 	text-align: center;
-	padding-top: 3.75em;
+	padding-top: .25em;
 }
 
 
 
-
-
-/* =========================================================
-
-Nav
-
-============================================================ */
-
-
-.nav {
-	margin-top: 1em;
-	text-align: right;
-}
-
-
-ul{
-	list-style-type: none;
-}
-
-
-.nav li {
-	display: inline-block;
-	list-style: none;
-}
-
-
-
-.nav a {
-	padding-right: 1em;
-	font-size: 1.5em;
-}
-
-
-
-
-/* =========================================================
-
-Content
-
-============================================================ */
-
-.content {
-	text-align: center;
-}
