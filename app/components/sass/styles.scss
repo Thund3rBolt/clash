@@ -1,5 +1,6 @@
 // Base
 // Header
+// Grid
 // Nav
 // Main
 
@@ -61,6 +62,29 @@ Header
 
 
 
+/* =========================================================
+
+Grid
+
+============================================================ */
+
+.grid {
+	clear: both;
+}
+
+.col1-2 {
+	display: block;
+	float: left;
+	padding-right: 2%;
+	width: 49%;
+}
+
+.col2-2 {
+	display: block;
+	float: right;
+	width: 49%;
+}
+
 
 /* =========================================================
 
@@ -106,6 +130,7 @@ Main Content
 
 .main {
 	margin-top: 1em;
+	padding-left: 1em;
 }
 
 
@@ -113,7 +138,6 @@ Main Content
 	font-family: Sans-serif, Times, serif;
 	font-size: 120%;
 	font-weight: 600;
-	padding-left: 1em;
 }
 
 
@@ -143,6 +167,7 @@ h3 span {
 
 .main ul {
 	font-size: 1.2em;
+	padding-bottom: 1em;
 }
 
 
@@ -154,4 +179,8 @@ h3 span {
 
 .main li:last-child {
 	padding-bottom: 2em;
+}
+
+iframe {
+	padding-bottom: 3em;
 }
